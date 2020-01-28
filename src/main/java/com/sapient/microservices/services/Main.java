@@ -1,7 +1,6 @@
 package com.sapient.microservices.services;
 
 import com.sapient.microservices.services.products.ProductsServer;
-import com.sapient.microservices.services.registration.RegistrationServer;
 
 public class Main {
 
@@ -25,9 +24,7 @@ public class Main {
 			return;
 		}
 
-		if (serverName.equals("registration") || serverName.equals("reg")) {
-			RegistrationServer.main(args);
-		}else if (serverName.equals("products")) {
+		if (serverName.equals("products")) {
 			ProductsServer.main(args);
 		} else {
 			System.out.println("Unknown server type: " + serverName);

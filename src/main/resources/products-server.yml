@@ -8,7 +8,7 @@ error:
 
 # HTTP Server
 server:
-  port: 2222   # HTTP (Tomcat) port
+  port: 8080   # HTTP (Tomcat) port
    
 
 
