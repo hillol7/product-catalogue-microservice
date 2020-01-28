@@ -13,18 +13,14 @@ mvn clean install -X - in debug mode
 ##To start the application
 
 To start the application we need to run to services
-
-For the enabling the default eureka server 
-`java -jar target/product-catalogue-microservice-1.1.0.RELEASE.jar registration` - after this command wait for the server to up completely
-
-Then running the products service
+Running the products service
 `java -jar target/product-catalogue-microservice-1.1.0.RELEASE.jar products`- after this command wait for the server to up completely
 
 ##search product by type
 
-`http://localhost:2222/products/{productType}`
+`http://localhost:8080/products/{productType}`
 
-`http://localhost:2222/products/Laptops`
+`http://localhost:8080/products/Laptops`
 
 Response Sample
 `{
@@ -36,9 +32,9 @@ Response Sample
 
 ##Search price by product name
 
-`http://localhost:2222/products/price/{productName}`
+`http://localhost:8080/products/price/{productName}`
 
-`http://localhost:2222/products/price/Lenovo`
+`http://localhost:8080/products/price/Lenovo`
 
 `Response
 [
@@ -53,7 +49,7 @@ Response Sample
 ##Create Product
 
 
-`http://localhost:2222/products/create`
+`http://localhost:8080/products/create`
 
 Request Payload
 `{
@@ -112,9 +108,9 @@ Response
 
 ##Delete Product
 
-`http://localhost:2222/products/delete/{productId}`
+`http://localhost:8080/products/delete/{productId}`
 
-`http://localhost:2222/products/delete/5`
+`http://localhost:8080/products/delete/5`
 
 Response
 `[
